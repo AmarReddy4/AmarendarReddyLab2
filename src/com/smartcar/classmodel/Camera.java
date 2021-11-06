@@ -7,7 +7,7 @@ package com.smartcar.classmodel;
  * @author amar0204
  *
  */
-public abstract class Camera {
+public class Camera {
 	
 	private float cameraVersion;
 	private int resolution;

@@ -7,7 +7,7 @@ package com.smartcar.classmodel;
  * @author amar0204
  *
  */
-public abstract class Sensor {
+public class Sensor {
 	
 	private String type;
 	private int range;
