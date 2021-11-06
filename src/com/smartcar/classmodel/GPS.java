@@ -21,6 +21,32 @@ public class GPS {
 		this.currentLocation = currentLocation;
 		
 	}
+	
+	public void navigate() {
+		System.out.println("Navigating to Hyderabad");
+	}
+	
+	public void setDestination() {
+		System.out.println("Destination to New York set");
+	}
+	
+	public void saveLocations() {
+		System.out.println("Location: FIU saved as school");
+	}
+	
+	public void particleFiltering() {
+		System.out.println("Improved accuracy");
+	}
+	
+	public void updateProximity() {
+		System.out.println("Proximity updated");
+	}
+	
+	public void updateVersion() {
+		System.out.println("Maps version updated, current version is 15.9");
+	}
+	
+	
 
 
 }

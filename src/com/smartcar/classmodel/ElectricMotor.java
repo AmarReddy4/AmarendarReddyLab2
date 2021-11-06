@@ -19,5 +19,15 @@ public class ElectricMotor {
 		this.voltage = voltage;
 		this.horsePower = horsePower;
 	}
+	
+	public void supplyElectricity() {
+		System.out.println("Electricity from battery to the motor and other systems");
+	}
+	
+	public void start() {
+		System.out.println("Vehicle started");
+	}
+	
+	
 
 }

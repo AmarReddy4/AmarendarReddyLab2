@@ -14,5 +14,10 @@ public class Suspension {
 	public Suspension(String actuator) {
 		this.actuator = actuator;
 	}
+	
+	public void createForce() {
+		System.out.println("High altitude ahead, a 5 inch force created");
+	}
+
 
 }

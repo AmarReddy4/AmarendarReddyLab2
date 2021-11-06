@@ -20,5 +20,17 @@ public class Tire {
 		this.width = width;
 		this.airPressure = airPressure;
 	}
+	
+	public void treadDepthSensor() {
+		System.out.println("Running at a certain depth");
+	}
+	
+	public void checkAir() {
+		System.out.println("Tire air pressure is normal");
+	}
+	
+	public void tireWearStatus() {
+		System.out.println("Tire status is Normal");
+	}
 
 }
