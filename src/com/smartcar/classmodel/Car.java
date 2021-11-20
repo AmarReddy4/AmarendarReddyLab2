@@ -7,7 +7,7 @@ package com.smartcar.classmodel;
  * @author amar0204
  *
  */
-public class Car {
+public class Car implements SelfCheckCapable {
 
 	private static Car myCar;
 	/**
@@ -58,14 +58,34 @@ public class Car {
 		System.out.println("Car Condition: Normal");
 	}
 	
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return (String) make;
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean runSelfCheck() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Car.myCar = new Car("Atlas", "NUM1234", "Amar", "Audi");
+		Car.myCar = new Car("Atlas", "NUM1234", "Amar", "AuD");
 		System.out.println("Car name: " + myCar.carName);
 		System.out.println("License Plate Number: " + myCar.licensePlateNumber);
 		System.out.println("Owner: " + myCar.owner);
-		System.out.println("Car name: " + myCar.make);
+		System.out.println("Make: " + myCar.make);
 		moveForward();
+		carStatus();
 
 	}
 
